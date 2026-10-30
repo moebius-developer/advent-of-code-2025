@@ -15,33 +15,6 @@ class Solution():
         answer = 0
         with open(input_file, 'r', encoding='utf-8') as file:
             for line in file:
-                # maxx = -math.inf
-                # maxn = -math.inf
-
-                # second_maxn = 0
-                # second_maxx = 0
-                # for ix, chr in enumerate(line.strip()):
-                #     num = int(chr)
-
-                #     if num >= maxn:
-                #         second_maxn = maxn
-                #         second_maxx = maxx
-
-                #         maxn = num
-                #         maxx = ix
-                #     elif num >= second_maxn:
-                #         second_maxn = num
-                #         second_maxx = ix
-
-                # if second_maxx > maxx:
-                #     batt = int(''.join([str(maxn), str(second_maxn)]))
-                # elif maxx > second_maxx:
-                #     batt = int(''.join([str(second_maxn), str(maxn)]))
-                # else:
-                #     raise RuntimeError('WTF?')
-
-                # print(maxx, maxn, second_maxx, second_maxn, batt)
-
                 stripped = line.strip()
                 ix_of_biggest_number, biggest_number = self.find_biggest(stripped)
 
