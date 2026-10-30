@@ -2,7 +2,6 @@
 
 from pathlib import Path
 import sys
-import heapq
 
 class Solution():
     def __init__(self):
