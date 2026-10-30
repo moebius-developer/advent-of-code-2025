@@ -43,6 +43,6 @@ class Solution():
                     zero_count += 1
 
 
-        print(''.join(['Day', ' ', str(this_dir)[-1], ':', ' ', str(zero_count)]))
+        print(f"Day {str(this_dir)[-1]}, part {Path(__file__).stem[-1]}: {str(zero_count)}")
 
 Solution()
